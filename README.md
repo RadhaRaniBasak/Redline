@@ -2,10 +2,21 @@
 
 A Spectacles Lens that puts a life-size ghost crowd on your real floor, so you can feel where 5 people per m² starts to get dangerous before the doors open.
 
-> **TODO:** add the public YouTube demo link (under 3 minutes)
+**Demo video (under 3 minutes): [youtu.be/H1h7XHV2v-U](https://youtu.be/H1h7XHV2v-U)**
 
-> **TODO:** capture the Preview at 5 per m² (red floor) and save it as docs/images/red-floor-5.png, then uncomment the line below.
-<!-- ![Redline at 5 people per m²: the floor turns red](docs/images/red-floor-5.png) -->
+[![Watch the Redline demo on YouTube](https://img.youtube.com/vi/H1h7XHV2v-U/hqdefault.jpg)](https://youtu.be/H1h7XHV2v-U)
+
+![Redline at 5 people per m²: the floor turns red](docs/images/01-red-floor-5.jpg)
+
+**Status**
+
+- [x] Planned with the Devpost Learn skill pack (`devpost/design-brief.md`, approved)
+- [x] Built with CLAD in Lens Studio, through the Lens Studio MCP
+- [x] Every done criterion has a LEAF test, all passing in the preview (section 8)
+- [x] Public demo video, under 3 minutes
+- [x] Screenshots from the Interactive Preview (section 3)
+- [x] Manual click check in Interactive Preview (section 10)
+- [ ] Frame time and comfort on real Specs (needs the glasses, section 9)
 
 ---
 
@@ -53,11 +64,17 @@ Sources for the 5-per-m² figure:
 - **Arrow.** A small arrow on the floor about 1 m ahead, pointing back to the zone. It shows only while the user is outside the zone and no part of it is in view.
 - **Sway and wave.** Each figure leans a little on its own. At 6 and 7 per m², a slow wave also runs through the crowd toward the stage.
 
-> **TODO:** capture the Preview at the starting view (setup mode: zone, corner handles, floor labels, clipboard) and save it as docs/images/start-view.png, then uncomment the line below.
-<!-- ![Redline at start: the zone, corner handles, floor labels and clipboard in setup](docs/images/start-view.png) -->
+### Screenshots (Lens Studio Interactive Preview, SPECS 27)
 
-> **TODO:** capture the Preview at 5 per m² (red floor) and save it as docs/images/red-floor-5.png, then uncomment the line below.
-<!-- ![Redline at 5 people per m²: the floor turns red](docs/images/red-floor-5.png) -->
+<table>
+<tr><td width="50%" valign="top"><img src="docs/images/07-start-view.jpg" alt="Setup: drag the blue corner handles to fit the zone to your space. The slider stays greyed out until you pinch Done."><br>Setup: drag the blue corner handles to fit the zone to your space. The slider stays greyed out until you pinch Done.</td><td width="50%" valign="top"><img src="docs/images/06-density-1-green.jpg" alt="1 per m²: a sparse crowd on a green floor, the first step of the 0 to 7 slider."><br>1 per m²: a sparse crowd on a green floor, the first step of the 0 to 7 slider.</td></tr>
+<tr><td width="50%" valign="top"><img src="docs/images/05-density-2-green.jpg" alt="2 per m²: a green floor and "Room to move", with two pairs of feet in the highlighted square metre."><br>2 per m²: a green floor and "Room to move", with two pairs of feet in the highlighted square metre.</td><td width="50%" valign="top"><img src="docs/images/04-density-3-amber.jpg" alt="3 per m²: an amber floor, with exactly three pairs of feet in the highlighted square metre."><br>3 per m²: an amber floor, with exactly three pairs of feet in the highlighted square metre.</td></tr>
+<tr><td width="50%" valign="top"><img src="docs/images/03-density-4-amber.jpg" alt="4 per m²: the floor turns amber and the clipboard warns "Getting tight", one step before the red mark on the slider."><br>4 per m²: the floor turns amber and the clipboard warns "Getting tight", one step before the red mark on the slider.</td><td width="50%" valign="top"><img src="docs/images/01-red-floor-5.jpg" alt="5 per m²: the floor turns red and the clipboard reads "Past the redline", the point where a standing crowd becomes dangerous."><br>5 per m²: the floor turns red and the clipboard reads "Past the redline", the point where a standing crowd becomes dangerous.</td></tr>
+<tr><td width="50%" valign="top"><img src="docs/images/02-preview-specs27-5.jpg" alt="Running in Lens Studio's Interactive Preview on SPECS 27: the highlighted square metre shows five glowing pairs of feet."><br>Running in Lens Studio's Interactive Preview on SPECS 27: the highlighted square metre shows five glowing pairs of feet.</td><td width="50%" valign="top"><img src="docs/images/08-density-6-red.jpg" alt="6 per m²: past the redline, the crowd packs tighter and the slider sits beyond its red mark."><br>6 per m²: past the redline, the crowd packs tighter and the slider sits beyond its red mark.</td></tr>
+<tr><td width="50%" valign="top"><img src="docs/images/14-density-7-red.jpg" alt="7 per m², the top of the slider: seven pairs of feet packed into one square metre."><br>7 per m², the top of the slider: seven pairs of feet packed into one square metre.</td><td width="50%" valign="top"><img src="docs/images/13-whole-room-100m2.jpg" alt="A whole room: a 100 m² zone at 7 per m² holds 700 life-size people, sized with the + and − buttons."><br>A whole room: a 100 m² zone at 7 per m² holds 700 life-size people, sized with the + and − buttons.</td></tr>
+<tr><td width="50%" valign="top"><img src="docs/images/12-test-your-eye-new-round.jpg" alt="Test your eye, a new round: the zone fills at a hidden density, and the clipboard only asks "How dense is it?""><br>Test your eye, a new round: the zone fills at a hidden density, and the clipboard only asks "How dense is it?"</td><td width="50%" valign="top"><img src="docs/images/11-test-your-eye-guess.jpg" alt="Test your eye hides the number and the floor colour. Set your guess with the slider, then pinch Check."><br>Test your eye hides the number and the floor colour. Set your guess with the slider, then pinch Check.</td></tr>
+<tr><td width="50%" valign="top"><img src="docs/images/10-test-your-eye-reveal.jpg" alt="The reveal: the true density, "You guessed 4, it was 7", and a top-down map with one dot per person."><br>The reveal: the true density, "You guessed 4, it was 7", and a top-down map with one dot per person.</td><td width="50%" valign="top"><img src="docs/images/09-test-your-eye-inside.jpg" alt="The same reveal seen from inside the crowd."><br>The same reveal seen from inside the crowd.</td></tr>
+</table>
 
 ---
 
@@ -92,7 +109,7 @@ This needs Node 22 or later and no install. It runs `tests/geometry.test.mjs`, w
 The nine LEAF scenarios are listed in `Assets/Tests/LeafIndex.ts`:
 `c1-zone-resize-and-done`, `c2-slider-fills-crowd`, `c3-floor-colour-and-tone`, `c4-clear-circle-in-the-middle`, `c5-arrow-when-zone-out-of-view`, `r6-sway-and-murmur`, `r7-clipboard-redline`, `r8-redline-tone-once`, `r9-test-your-eye-round`.
 
-> **TODO:** write the exact steps to open the LEAF panel in Lens Studio and run a scenario from it. The steps used in this build are not recorded in the sources. The scenarios use the Lens Studio MCP tools `open_leaf_panel`, `list_leaf_scenarios` and `run_leaf_scenario`.
+**Running them.** In this build the agent ran the scenarios through the Lens Studio MCP tools `open_leaf_panel`, `list_leaf_scenarios` and `run_leaf_scenario`. To repeat it, open the project in Lens Studio with the Preview running, connect your coding agent to the Lens Studio MCP, and ask it to list and run the LEAF scenarios.
 
 Before publishing, disable the **LEAF Plugin Bridge** and **LeafIndex** objects, so the test scenarios do not ship in the Lens.
 
@@ -113,14 +130,13 @@ Each row is a decision from `devpost/design-log.md` (or the brief), with its rea
 | Sway, and a shared wave at 6 and 7 per m² | Above about 5 per m², a real crowd starts to move as one. Seeing that makes the redline something to feel. |
 | Spatial crowd murmur, louder as density rises | Sound makes the crowd feel present, even when it is out of view. |
 | Level caption under the value ("Room to move", "Getting tight", "Past the redline") | A number alone does not say what it means. The words do, at a glance. |
-| Setup hint: "Fit the zone to your space, then pinch Done" | The log records the change from "Fit the zone, then pinch Done" but gives no reason. |
 | Hint in 60% white at caption size | The hint was nearly as big as the button label, so nothing told the eye what mattered first. The value is now largest, then the button label, then the hint. |
 | Touch areas: slider 3.6 cm tall (track 2 cm); buttons 8.2 × 4 cm (face 8 × 3 cm); 0.2 cm between the two buttons | Specs asks for targets of at least 6 cm at 110 cm, about 3.5 cm at the clipboard's ~64 cm reading distance. The slider was only 2 cm. |
 | Motion: panel rises 2 cm and grows in over 0.35 s; hint and button label fade and cross-fade | The hint and label used to snap, so setup-to-done felt abrupt. |
 | Calm tone: G3 (196 Hz) with a soft octave and fifth, slow decay, short room reverb | It should feel like a weight settling, not an alarm. A steward who hears an alarm reads it as "something broke". G3 is kept because small glasses speakers barely reproduce below about 150 Hz. |
 | Ticks: 80 ms, down 2 semitones lower and about 4 dB quieter | You can feel each step without looking at the number. A step back sounds like easing off. |
 | Test your eye, with a hidden density, a guess, and a reveal | Reading density is a skill stewards need without a number on the wall. A guess with a reveal trains it faster than watching the slider. |
-| Font Archivo Black for the value and floor labels; Material icons on the buttons | Heavy weight with clear digits, and it stays readable. Atkinson Hyperlegible Next was tried first, but the import brought in only its regular weight. The brief asks for icons on each button; the log gives no separate reason. |
+| Font Archivo Black for the value and floor labels; Material icons on the buttons | Heavy weight with clear digits, and it stays readable. Atkinson Hyperlegible Next was tried first, but the import brought in only its regular weight. The brief asks for an icon on each button. |
 | Zone cap 10 × 10 m (was 8 × 6 m); start stays at 4 × 3 m | The corner handles can stretch the zone over a whole room, and the slider sets the density across all of it. The 4 × 3 m start stays because the done criteria and LEAF tests are built on it. |
 | Ghosts keep at least 22 cm (half a shoulder width) inside the zone outline | No figure should stick out past the outline. |
 | Ghosts load blue-grey, not black | The scene had saved them black. Black shows as see-through on the additive display. |
@@ -128,8 +144,6 @@ Each row is a decision from `devpost/design-log.md` (or the brief), with its rea
 | After Edit zone, the floor reads "0 people" | The crowd is hidden in setup, so a count would describe a crowd that is not shown. |
 | Ghosts share one material pair per shade (each gets its own only while fading); zone-in-view check samples only the outline | Fewer materials keep the crowd batched. Sampling only the outline cuts per-frame work on the glasses. |
 | **Thin-strip layout fix**, found by `npm test` | A strip thinner than 22 cm, such as the edge of a 3.05 m zone, pushed a person into the next full square metre, which then held N + 1. Thin strips now take no one, and their share goes to the roomier cut cells. |
-
-> **TODO:** the log records the setup-hint wording change but gives no reason for it, and the icons row has no separate reason either. Add the reasons, or drop those rows.
 
 **Clipboard history, in order:** 30 × 20 cm at 55 cm (covered the crowd) → 18 × 12 cm at waist height (45 cm ahead, 45 cm below eye level, below the view) → 18 × 12 cm about 55 cm away, 10° below the line of sight, see-through, follows lazily → 18 × 12.5 cm at 60 cm, 5° below, holds still while aimed, round Pin button (the earlier placement left the Done button at the edge of the view, and clicks were not reaching the buttons).
 
@@ -251,7 +265,7 @@ CLAD is the agent harness and toolkit used for this project. Claude Code was the
 | Font | Archivo Black, imported through the font tool. | font-selector (FontSelector) |
 | Icons | Material Symbols on the buttons. | icon-selector (IconSelector) |
 | Tests | Wrote LEAF scenarios R8 (redline tone once) and R9 (Test your eye). | specs-leaf-write-scenarios |
-| Screenshots | Requested for this README. | verify-preview. The connected server had no screenshot tool. |
+| Screenshots | Taken by hand in the Interactive Preview (section 3). | verify-preview had no screenshot tool on the connected server. |
 | LEAF loop | Ran the scenarios in the Preview and read the results. | Lens Studio MCP: `run_leaf_scenario`, `list_leaf_scenarios`, `open_leaf_panel`, `PreviewPanelTool` (refresh and resume), `InjectPreviewGesture` (click test) |
 | Review | Code review found 10 issues. All but one were fixed. | ECC `code-review` |
 | Harness | Audit of the harness. | ECC `harness-audit` |
@@ -262,8 +276,6 @@ Notes on the build:
 
 - Some checks had to wait while the Lens Studio MCP server was offline. Those checks are marked in the design log.
 - A click test (`InjectPreviewGesture`) on the Done button reached no button in one session. Fixes followed (see section 5 and section 10).
-
-> **TODO:** record which CLAD agents ran the initial build. The sources do not say.
 
 - Of the 10 code-review issues, the one not fixed is #9: the LEAF test objects (`LeafIndex`, `LEAF Plugin Bridge`) are still in the shipping scene, because disabling them would stop the tests running in the preview. Switch them off before publishing.
 
@@ -303,13 +315,13 @@ Run on 2026-11-09, in Lens Studio 5.24.1 Preview, SPECS 27, Interactive, on the 
 - The tests press buttons and set the slider through their UIKit value. They do not aim a ray or drag. A mouse drag on the slider is therefore a manual check.
 - Walking and turning are simulated by moving or rotating the zone relative to the camera. The user's relative geometry is the same.
 - A checked-in test caught a real counting bug in the crowd layout (section 5). Also, a test that presses buttons directly can pass while real clicks fail (section 11).
-- All six done criteria have a LEAF test. Real mouse clicks and slider drags in Interactive Preview are still manual checks.
+- All six done criteria have a LEAF test. Real mouse clicks and slider drags were checked by hand in the 10 Nov 2026 Preview session (section 10).
 
 ---
 
 ## 9. Performance
 
-> **TODO:** frame time has not been measured. Measure it in the Preview and on real glasses at 4 × 3 m and 5 per m² (60 ghosts), 8 × 6 m and 7 per m² (336 ghosts), and 10 × 10 m and 7 per m² (700 ghosts). Record the device, Lens Studio version and the numbers here.
+**Not yet measured:** frame time. It needs a check in the Preview and on real glasses at 4 × 3 m and 5 per m² (60 ghosts), 8 × 6 m and 7 per m² (336 ghosts), and 10 × 10 m and 7 per m² (700 ghosts). The Preview screenshots in section 3 include a 100 m² zone at 7 per m² (700 ghosts) running in the Preview.
 
 Known scale facts, from the code and the design log:
 
@@ -336,10 +348,14 @@ Each of these passed the LEAF test in the Preview on 2026-11-09, and the geometr
 
 These tests simulate walking and turning, and set the slider through UIKit. They are logic checks, not checks of the experience.
 
+### Checked by hand in the Preview (2026-11-10)
+
+- **Real mouse input.** In the Interactive Preview session used for the demo video, Done, Edit zone, slider drags from 1 to 7, the area − and + buttons (4 m² up to 100 m²), Test your eye and Check all responded to real clicks. Next round, Stop test and Pin were on screen but not separately recorded.
+- **Looks.** The screenshots in section 3 show the see-through clipboard backing, the clipboard in view, and an icon on each button. The small floor labels can sit behind the clipboard's value text at this angle.
+
 ### Unproven (manual checks, or only real glasses can tell)
 
-- **Real mouse clicks and slider drags** in Interactive Preview. In one session, clicks on the clipboard did not reach its buttons. Fixes were made (holding still while aimed, placing the panel higher, and the Pin button). A manual click re-check is still TODO.
-- **Looks, not yet screenshot-checked:** transparency of the backing, whether the clipboard stays in view, icon placement on the buttons, and whether the labels read at an angle.
+- **Next round, Stop test and Pin** with real clicks: not separately recorded in the 2026-11-10 session.
 - **The feel of 5 per m²** through the glasses' narrow view, where only part of the crowd is visible at once. Also how the crowd reads on a display that adds light (figures may look like a pale wash).
 - **Comfort** of looking down at the floor for a while, and whether everything needed is in view without looking down.
 - **The arrow.** It is seen only when the user looks down at the floor. Someone who turns away while looking straight ahead may miss it.
@@ -347,8 +363,6 @@ These tests simulate walking and turning, and set the slider through UIKit. They
 - **Real hand tracking and real recognition.** Neither is in this build. The crowd is always virtual, and the steward fits the zone by hand.
 - **Clipboard distance.** The Inspector default is 60 cm, but the saved scene overrides it to 45 cm, so the current build runs at 45 cm. This is listed in section 5.
 - **Publishing.** Disable the LEAF Plugin Bridge and LeafIndex objects first.
-
-> **TODO:** after the next Preview session, run the manual click check on Done, Edit zone, Test your eye, Check, Next round, Pin, and the slider drag. Record the result here.
 
 ### Limits of the tool
 
@@ -381,7 +395,7 @@ redline/
 │   ├── design-brief.md             approved brief (plan-lens)
 │   ├── design-log.md               dated changes, each with its reason
 │   └── project-story.md            Devpost story
-├── docs/images/                    (to add) start-view.png, red-floor-5.png
+├── docs/images/                    14 Preview screenshots (section 3)
 └── Assets/
     ├── Scene.scene                 the Redline scene
     ├── Scripts/
