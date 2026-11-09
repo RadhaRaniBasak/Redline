@@ -4,9 +4,7 @@ A Spectacles Lens that puts a life-size ghost crowd on your real floor, so you c
 
 **Demo video (under 3 minutes): [youtu.be/H1h7XHV2v-U](https://youtu.be/H1h7XHV2v-U)**
 
-[![Watch the Redline demo on YouTube](https://img.youtube.com/vi/H1h7XHV2v-U/hqdefault.jpg)](https://youtu.be/H1h7XHV2v-U)
 
-![Redline at 5 people per m²: the floor turns red](docs/images/01-red-floor-5.jpg)
 
 **Status**
 
@@ -64,17 +62,6 @@ Sources for the 5-per-m² figure:
 - **Arrow.** A small arrow on the floor about 1 m ahead, pointing back to the zone. It shows only while the user is outside the zone and no part of it is in view.
 - **Sway and wave.** Each figure leans a little on its own. At 6 and 7 per m², a slow wave also runs through the crowd toward the stage.
 
-### Screenshots (Lens Studio Interactive Preview, SPECS 27)
-
-<table>
-<tr><td width="50%" valign="top"><img src="docs/images/07-start-view.jpg" alt="Setup: drag the blue corner handles to fit the zone to your space. The slider stays greyed out until you pinch Done."><br>Setup: drag the blue corner handles to fit the zone to your space. The slider stays greyed out until you pinch Done.</td><td width="50%" valign="top"><img src="docs/images/06-density-1-green.jpg" alt="1 per m²: a sparse crowd on a green floor, the first step of the 0 to 7 slider."><br>1 per m²: a sparse crowd on a green floor, the first step of the 0 to 7 slider.</td></tr>
-<tr><td width="50%" valign="top"><img src="docs/images/05-density-2-green.jpg" alt="2 per m²: a green floor and "Room to move", with two pairs of feet in the highlighted square metre."><br>2 per m²: a green floor and "Room to move", with two pairs of feet in the highlighted square metre.</td><td width="50%" valign="top"><img src="docs/images/04-density-3-amber.jpg" alt="3 per m²: an amber floor, with exactly three pairs of feet in the highlighted square metre."><br>3 per m²: an amber floor, with exactly three pairs of feet in the highlighted square metre.</td></tr>
-<tr><td width="50%" valign="top"><img src="docs/images/03-density-4-amber.jpg" alt="4 per m²: the floor turns amber and the clipboard warns "Getting tight", one step before the red mark on the slider."><br>4 per m²: the floor turns amber and the clipboard warns "Getting tight", one step before the red mark on the slider.</td><td width="50%" valign="top"><img src="docs/images/01-red-floor-5.jpg" alt="5 per m²: the floor turns red and the clipboard reads "Past the redline", the point where a standing crowd becomes dangerous."><br>5 per m²: the floor turns red and the clipboard reads "Past the redline", the point where a standing crowd becomes dangerous.</td></tr>
-<tr><td width="50%" valign="top"><img src="docs/images/02-preview-specs27-5.jpg" alt="Running in Lens Studio's Interactive Preview on SPECS 27: the highlighted square metre shows five glowing pairs of feet."><br>Running in Lens Studio's Interactive Preview on SPECS 27: the highlighted square metre shows five glowing pairs of feet.</td><td width="50%" valign="top"><img src="docs/images/08-density-6-red.jpg" alt="6 per m²: past the redline, the crowd packs tighter and the slider sits beyond its red mark."><br>6 per m²: past the redline, the crowd packs tighter and the slider sits beyond its red mark.</td></tr>
-<tr><td width="50%" valign="top"><img src="docs/images/14-density-7-red.jpg" alt="7 per m², the top of the slider: seven pairs of feet packed into one square metre."><br>7 per m², the top of the slider: seven pairs of feet packed into one square metre.</td><td width="50%" valign="top"><img src="docs/images/13-whole-room-100m2.jpg" alt="A whole room: a 100 m² zone at 7 per m² holds 700 life-size people, sized with the + and − buttons."><br>A whole room: a 100 m² zone at 7 per m² holds 700 life-size people, sized with the + and − buttons.</td></tr>
-<tr><td width="50%" valign="top"><img src="docs/images/12-test-your-eye-new-round.jpg" alt="Test your eye, a new round: the zone fills at a hidden density, and the clipboard only asks "How dense is it?""><br>Test your eye, a new round: the zone fills at a hidden density, and the clipboard only asks "How dense is it?"</td><td width="50%" valign="top"><img src="docs/images/11-test-your-eye-guess.jpg" alt="Test your eye hides the number and the floor colour. Set your guess with the slider, then pinch Check."><br>Test your eye hides the number and the floor colour. Set your guess with the slider, then pinch Check.</td></tr>
-<tr><td width="50%" valign="top"><img src="docs/images/10-test-your-eye-reveal.jpg" alt="The reveal: the true density, "You guessed 4, it was 7", and a top-down map with one dot per person."><br>The reveal: the true density, "You guessed 4, it was 7", and a top-down map with one dot per person.</td><td width="50%" valign="top"><img src="docs/images/09-test-your-eye-inside.jpg" alt="The same reveal seen from inside the crowd."><br>The same reveal seen from inside the crowd.</td></tr>
-</table>
 
 ---
 
