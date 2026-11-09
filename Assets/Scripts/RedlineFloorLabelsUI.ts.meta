@@ -1,0 +1,57 @@
+- !<AssetImportMetadata/cc2e56e7-1a71-4baa-88b1-d63a76510773>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 6e36b166-1c6a-4ce2-8a7c-068105318d97
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 6e36b166-1c6a-4ce2-8a7c-068105318d97
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 419729f9-fec7-493a-8e34-4abc41d333ab
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/419729f9-fec7-493a-8e34-4abc41d333ab>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 2690f63f-96a5-4c2f-b21a-d7c088305839
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    letterHeightCm: false
+    squareNumberHeightCm: false
+    textColor: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - letterHeightCm: !<float> 6.000000
+      squareNumberHeightCm: !<float> 20.000000
+      textColor: !<Vec4> {x: 0.950000, y: 0.950000, z: 0.950000, w: 1.000000}
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">RedlineFloorLabelsUI – text lying flat on the floor</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Settings</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float letterHeightCm = 6 {"hint":"Letter height of the near-edge labels (cm)", "widget":"slider", "min":2, "max":20, "step":0.5}'
+    - '// @input float squareNumberHeightCm = 20 {"hint":"Digit height of the number beside the highlighted square (cm)", "widget":"slider", "min":5, "max":40, "step":1}'
+    - '// @input vec4 textColor = "{0.95,0.95,0.95,1}" {"hint":"Text colour — keep it light, the display is additive (dark text disappears)", "widget":"color"}'
+    - '// @ui {"widget":"group_end"}'

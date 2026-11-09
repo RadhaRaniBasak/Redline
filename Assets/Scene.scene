@@ -5,6 +5,9 @@
     - !<own> 0005641c-028d-459a-0000-000000014b4d
     - !<own> d029bf48-19f5-41ef-add6-c6cc721f8ad4
     - !<own> beae2714-1555-483e-8750-5ad8ad6d00ed
+    - !<own> d3d8e2ea-ddec-4b73-8744-380331f729e0
+    - !<own> b1737aa1-fdb1-47ad-a284-4a22a107de1a
+    - !<own> 545299d0-7fd6-4efb-9b70-68f551cc9be3
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       - id: 1
@@ -425,6 +428,22 @@
     []
   Components:
     []
+- !<ScriptComponent/04b6c4c1-41ec-45e9-bb1e-5582508ba488>
+  PrefabRemaps:
+    []
+  Name: MessagingBridge
+  Enabled: true
+  ScriptAsset: !<reference> 9aa407db-2872-4afc-a162-cf7faf2a0f29
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/0553f973-c574-4033-b114-397afd87d2cf>
   PrefabRemaps:
     []
@@ -708,6 +727,21 @@
     - !<own> 5e2db866-398c-4b02-b57e-2a638efadc39
   Components:
     - !<own> b3518cc5-e593-4163-94d2-52ef5d9e964e
+- !<SceneObject/0f4736d8-6cff-4155-95bf-f6caf9c1f93d>
+  PrefabRemaps:
+    []
+  Name: VirtualFloor
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
 - !<SceneObject/0f73a805-6289-461e-8643-cc1d436d1391>
   PrefabRemaps:
     []
@@ -1076,6 +1110,26 @@
     []
   Components:
     - !<own> 064d77f4-77dc-48e8-ae9e-b66a987a28f5
+- !<ScriptComponent/1f915730-b4cf-4ef1-84a0-2ce28df6fead>
+  PrefabRemaps:
+    []
+  Name: RedlineFloorLabelsUI
+  Enabled: true
+  ScriptAsset: !<reference> 6e36b166-1c6a-4ce2-8a7c-068105318d97
+  ScriptInputsDefault:
+    letterHeightCm: true
+    squareNumberHeightCm: true
+    textColor: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      letterHeightCm: !<float> 6.000000
+      squareNumberHeightCm: !<float> 20.000000
+      textColor: !<Vec4> {x: 0.950000, y: 0.950000, z: 0.950000, w: 1.000000}
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/20157230-f113-4f15-8523-52391e53b1ee>
   PrefabRemaps:
     []
@@ -2258,6 +2312,21 @@
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
+- !<SceneObject/3cbc0556-216a-4119-8c22-29256e748935>
+  PrefabRemaps:
+    []
+  Name: Clipboard
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: -15.000000, z: -55.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 4ab6de70-68d2-4707-8ee8-b01fd1db9c12
 - !<SceneObject/3d52efa7-2c96-46f1-9254-1f7369fad74b>
   PrefabRemaps:
     []
@@ -2368,6 +2437,21 @@
     - !<own> 23d2148d-2553-48ba-ab51-8b7fbe948a79
     - !<own> 400372e3-a564-4b13-a1fa-a73e5904005d
     - !<own> bab8d3fb-6f20-4ddb-908f-d64260ec95b4
+- !<SceneObject/45f4b816-50b5-4b6e-bb50-29ee1c64dc50>
+  PrefabRemaps:
+    []
+  Name: Arrow
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
 - !<SceneObject/466836c1-4a69-4466-beaa-7ad3cc5f2f8d>
   PrefabRemaps:
     []
@@ -2383,6 +2467,22 @@
     []
   Components:
     []
+- !<ScriptComponent/484b69c8-aaf0-4c93-9a38-e673daf4c986>
+  PrefabRemaps:
+    []
+  Name: LeafIndex
+  Enabled: true
+  ScriptAsset: !<reference> 5f4689b4-da3c-41bb-a1b1-664774cd00d0
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/491bf470-9a41-42ef-b1b9-32efb6923cc0>
   PrefabRemaps:
     []
@@ -2428,6 +2528,24 @@
     []
   Components:
     - !<own> 68f2fa8c-aecd-42cb-9359-b21922518964
+- !<ScriptComponent/4ab6de70-68d2-4707-8ee8-b01fd1db9c12>
+  PrefabRemaps:
+    []
+  Name: RedlineClipboardUI
+  Enabled: true
+  ScriptAsset: !<reference> cec1666d-ce10-4326-8dbb-7272599afa02
+  ScriptInputsDefault:
+    followLagSeconds: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      followDistanceCm: !<float> 45.000000
+      belowEyeCm: !<float> 45.000000
+      followLagSeconds: 0.700000
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/4bf48550-2261-4c39-8bed-271d0291cc45>
   PrefabRemaps:
     []
@@ -2718,6 +2836,21 @@
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
+- !<SceneObject/545299d0-7fd6-4efb-9b70-68f551cc9be3>
+  PrefabRemaps:
+    []
+  Name: LEAF Plugin Bridge
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 04b6c4c1-41ec-45e9-bb1e-5582508ba488
 - !<ScriptComponent/550a57a0-98f0-488e-96ea-a990ac46ef42>
   PrefabRemaps:
     []
@@ -3262,6 +3395,39 @@
   ForceCompound: false
   Intangible: false
   ShowCollider: false
+- !<ScriptComponent/66dd87a1-5606-4dda-be3c-487916c95aea>
+  PrefabRemaps:
+    []
+  Name: RedlineMain
+  Enabled: true
+  ScriptAsset: !<reference> 6239ee61-4a73-4770-bba0-5df9e9098c9d
+  ScriptInputsDefault:
+    clearRadiusCm: true
+    fadeSeconds: true
+    labelSeconds: true
+    ghostColor: true
+    tintOpacity: true
+    eyeHeightCm: true
+    debugColliders: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      zoneRoot: !<reference.SceneObject> beca8590-28c5-41b9-8ce0-18911e872946
+      arrowRoot: !<reference.SceneObject> 45f4b816-50b5-4b6e-bb50-29ee1c64dc50
+      virtualFloorRoot: !<reference.SceneObject> 0f4736d8-6cff-4155-95bf-f6caf9c1f93d
+      clipboard: !<MappingBased.AssignableType_1> 4ab6de70-68d2-4707-8ee8-b01fd1db9c12
+      floorLabels: !<MappingBased.AssignableType_2> 1f915730-b4cf-4ef1-84a0-2ce28df6fead
+      clearRadiusCm: !<float> 60.000000
+      fadeSeconds: 0.300000
+      labelSeconds: !<float> 3.000000
+      ghostColor: !<Vec3> {x: 0.431000, y: 0.545000, z: 0.659000}
+      tintOpacity: 0.350000
+      eyeHeightCm: !<float> 160.000000
+      debugColliders: false
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/66f8f0a5-9d39-45f3-801d-08075c26195a>
   PrefabRemaps:
     []
@@ -4709,6 +4875,21 @@
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
+- !<SceneObject/8b47a31c-f59f-4d37-9e70-94aa3c8ddd70>
+  PrefabRemaps:
+    []
+  Name: FloorLabels
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 1f915730-b4cf-4ef1-84a0-2ce28df6fead
 - !<SceneObject/8b49efbb-5163-4fc2-9adf-23ab70242e34>
   PrefabRemaps:
     []
@@ -5919,6 +6100,21 @@
     []
   Components:
     []
+- !<SceneObject/b1737aa1-fdb1-47ad-a284-4a22a107de1a>
+  PrefabRemaps:
+    []
+  Name: LeafIndex
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 484b69c8-aaf0-4c93-9a38-e673daf4c986
 - !<SceneObject/b28c0a51-0c6b-4708-ad4f-927fa06f298f>
   PrefabRemaps:
     []
@@ -6657,6 +6853,21 @@
     - !<own> 687552b3-0b5e-4940-9d76-162f7072be9b
   Components:
     []
+- !<SceneObject/beca8590-28c5-41b9-8ce0-18911e872946>
+  PrefabRemaps:
+    []
+  Name: Zone
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 8b47a31c-f59f-4d37-9e70-94aa3c8ddd70
+  Components:
+    []
 - !<ScriptComponent/bee1bfd7-28b2-4d0c-a48f-567d14dfb75e>
   PrefabRemaps:
     []
@@ -7343,6 +7554,24 @@
     - !<own> 2cc4a6bc-2bc5-4c66-b602-4edf55394ecd
   Components:
     - !<own> 8e201c25-b432-4cc1-b72f-0a5a5661dfcb
+- !<SceneObject/d3d8e2ea-ddec-4b73-8744-380331f729e0>
+  PrefabRemaps:
+    []
+  Name: Redline
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> beca8590-28c5-41b9-8ce0-18911e872946
+    - !<own> 45f4b816-50b5-4b6e-bb50-29ee1c64dc50
+    - !<own> 3cbc0556-216a-4119-8c22-29256e748935
+    - !<own> 0f4736d8-6cff-4155-95bf-f6caf9c1f93d
+  Components:
+    - !<own> 66dd87a1-5606-4dda-be3c-487916c95aea
 - !<ScriptComponent/d410c3a5-67e5-4866-bda3-2cea8d84aa3d>
   PrefabRemaps:
     []
