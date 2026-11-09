@@ -10,7 +10,7 @@
  *         result — true value + "You guessed 4, it was 6", and a top-down map of the zone and its people
  *                  in place of the slider and hint, [Next round] [Stop test]
  *       The backing is see-through (plateOpacity) so the crowd shows behind it; only text, slider and
- *       buttons are solid. Also owns the lazy follow: ~55 cm ahead and ~10° below
+ *       buttons are solid. Also owns the lazy follow: followDistanceCm ahead (default 60) and belowGazeDeg (default 5°) below
  *       wherever you look — so it's in view without looking down, whether you look ahead or down at
  *       the square — facing the eye, trailing walks, turns and nods and settling back, and never
  *       closer than MIN_FACE_CM to the face. Motion: the panel rises and grows in when first

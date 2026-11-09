@@ -134,6 +134,7 @@ interface Cell {
   z0: number
   z1: number
   full: boolean
+  thin: boolean
   quota: number
   count: number
 }
@@ -164,19 +165,27 @@ export function layoutCrowd(zone: ZoneRect, density: number, seed: number = 7): 
       const z1 = Math.min(cz0 + SQUARE_CM, zone.maxZ)
       if (x1 - x0 <= 0.01 || z1 - z0 <= 0.01) continue
       const full = x1 - x0 >= SQUARE_CM - 0.01 && z1 - z0 >= SQUARE_CM - 0.01
+      // A strip too thin to stand in (the zone-edge clamp would push its people into the next square)
+      // takes no one; its share goes to the roomier cut cells below.
+      const thin = !full && (x1 - x0 <= ZONE_EDGE_CM || z1 - z0 <= ZONE_EDGE_CM)
       const quota = (n * (x1 - x0) * (z1 - z0)) / (SQUARE_CM * SQUARE_CM)
-      cells.push({i, j, x0, x1, z0, z1, full, quota, count: full ? n : Math.floor(quota)})
+      cells.push({i, j, x0, x1, z0, z1, full, thin, quota, count: full ? n : thin ? 0 : Math.floor(quota)})
     }
   }
 
   // Largest remainder over the cut cells so the grand total is exactly round(N x area).
   let placed = 0
   for (const c of cells) placed += c.count
-  const cut = cells.filter((c) => !c.full).sort((a, b) => b.quota - b.count - (a.quota - a.count) || a.i - b.i || a.j - b.j)
-  for (let k = 0; k < cut.length && placed < total; k++) {
-    if (cut[k].count < n) {
-      cut[k].count++
-      placed++
+  // Thin strips' shares can add up to more than one person per roomy cut cell, so loop until placed.
+  const cut = cells.filter((c) => !c.full && !c.thin).sort((a, b) => b.quota - b.count - (a.quota - a.count) || a.i - b.i || a.j - b.j)
+  for (let added = true; placed < total && added; ) {
+    added = false
+    for (let k = 0; k < cut.length && placed < total; k++) {
+      if (cut[k].count < n) {
+        cut[k].count++
+        placed++
+        added = true
+      }
     }
   }
 

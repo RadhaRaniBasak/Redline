@@ -1,0 +1,8 @@
+{
+  "name": "redline",
+  "private": true,
+  "description": "Redline Spectacles Lens: Node checks for the crowd geometry (the Lens itself runs in Lens Studio)",
+  "scripts": {
+    "test": "node --experimental-strip-types --no-warnings --test tests/geometry.test.mjs"
+  }
+}

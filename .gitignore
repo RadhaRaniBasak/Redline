@@ -51,3 +51,9 @@ leaf_plugin_settings.json
 .font_tmp/
 tempAssetGen/
 .virtual-scene.json
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key

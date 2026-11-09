@@ -11,7 +11,7 @@
  * Expects (@input): zoneRoot, arrowRoot, virtualFloorRoot, clipboard (RedlineClipboardUI),
  *                   floorLabels (RedlineFloorLabelsUI on Zone/FloorLabels).
  * Must not: create Text or UIKit (that lives in the *UI modules).
- * Size: ~340 lines — single state owner + the test surface; visuals live in RedlineZoneView /
+ * Size: ~715 lines — single state owner + the test surface; visuals live in RedlineZoneView /
  *       RedlineCrowd and the math in RedlineGeometry.
  */
 import WorldCameraFinderProvider from "SpectaclesInteractionKit.lspkg/Providers/CameraProvider/WorldCameraFinderProvider"
